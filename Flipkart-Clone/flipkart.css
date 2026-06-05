@@ -28,7 +28,6 @@ header img {
   width: 22px;
 }
 
-/* FIX: Was "header .logo, .explore" — wrongly targeted all .explore on page */
 header .logo,
 header .explore {
   background-color: #FFE51F;
@@ -36,11 +35,10 @@ header .explore {
   align-items: center;
   gap: 8px;
   padding: 12px 20px;
-  width: 10%;
+  width: auto;
   border-radius: 8px;
 }
 
-/* FIX: Was "header .logo, .explore p" — should be "header .logo p, header .explore p" */
 header .logo p,
 header .explore p {
   font-style: italic;
@@ -100,11 +98,14 @@ header .location span {
   font-weight: 600;
 }
 
-hr {
-  color: #D6D6D6;
-  opacity: 0.4;
-  width: 95%;
-  margin-left: 50px;
+
+ hr{
+  border:none;
+  height:1px;
+  background:#D6D6D6;
+  opacity:0.4;
+  width:90%;
+  margin:0 auto;
 }
 
 /* ===== CATEGORY ===== */
@@ -148,15 +149,14 @@ hr {
 
 /* ===== HERO ===== */
 .hero .poster-3 {
-  margin: 10px 60px;
   display: flex;
   gap: 20px;
-  justify-content: space-evenly;
+  margin: 15px 40px;
 }
 
 .hero .poster-3 img {
-  width: 430px;
-  height: 200px;
+  flex: 1;
+  height: 220px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -178,22 +178,25 @@ hr {
 .cards-container {
   display: flex;
   padding: 20px 60px;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.card {
+  .card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  width: 100%;
+  width: 220px;
+  min-width: 220px;
   height: 400px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
 }
+
 
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -293,7 +296,7 @@ hr {
   border-radius: 8px;
   padding: 20px;
   color: #fff;
-  /* FIX: Removed fixed height:300px — was cutting off deal cards */
+
 }
 
 .deals-section2 {
@@ -554,8 +557,11 @@ hr {
   }
 
   .footer-main {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
   .footer-bottom {
     flex-direction: column;
