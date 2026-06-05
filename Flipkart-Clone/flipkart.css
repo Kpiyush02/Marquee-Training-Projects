@@ -97,13 +97,13 @@ header .location span {
   align-items: center;
   gap: 25px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 hr {
   color: #D6D6D6;
   opacity: 0.4;
-  width: 90%;
+  width: 95%;
   margin-left: 50px;
 }
 
@@ -114,7 +114,8 @@ hr {
   justify-content: flex-start;
   padding: 12px 40px;
   gap: 30px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  width: 100%;
 }
 
 .category-item {
@@ -130,6 +131,7 @@ hr {
   transition: all 0.2s ease;
   text-align: center;
   min-width: 60px;
+  width: 100%;
 }
 
 .category-item:hover {
