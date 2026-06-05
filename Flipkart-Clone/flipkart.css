@@ -7,9 +7,6 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f1f3f6;
-  max-width: 1200px;
-  margin: 0 auto;
-
 }
 
 /* ===== ROOT VARIABLES ===== */
@@ -100,7 +97,7 @@ header .location span {
   align-items: center;
   gap: 25px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 hr {
@@ -116,7 +113,7 @@ hr {
   align-items: center;
   justify-content: flex-start;
   padding: 12px 40px;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
@@ -128,20 +125,18 @@ hr {
   padding: 8px 12px;
   cursor: pointer;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #333;
   transition: all 0.2s ease;
   text-align: center;
-  min-width: 80px;
+  min-width: 60px;
 }
 
 .category-item:hover {
   color: #126FED;
 }
-
-/* FIX: Removed "!important" — unnecessary here */
 .category-item i {
-  font-size: 90px;
+  font-size: 50px;
   color: inherit;
   display: block;
   line-height: 1;
@@ -154,11 +149,12 @@ hr {
   margin: 10px 60px;
   display: flex;
   gap: 20px;
+  justify-content: space-evenly;
 }
 
 .hero .poster-3 img {
-  width: 3800px;
-  height: 180px;
+  width: 430px;
+  height: 200px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -179,9 +175,9 @@ hr {
 /* ===== PRODUCT CARDS ===== */
 .cards-container {
   display: flex;
-  gap: 30px;
   padding: 20px 60px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -189,8 +185,8 @@ hr {
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  width: 192px;
-  height: 380px;
+  width: 250px;
+  height: 400px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
@@ -514,8 +510,8 @@ hr {
 }
 
 .payment-methods img {
-  max-width: 500px;
-  height: auto;
+  max-width: 100px;
+  height: 30px;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -572,4 +568,4 @@ hr {
   .payment-methods {
     text-align: left;
   }
-}
+} 
