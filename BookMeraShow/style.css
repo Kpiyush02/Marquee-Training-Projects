@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-color:#d2caca;
+}
+
+.navbar{
+    height: 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background-color:white;
+}
+
+.left-nav{
+    display:flex;
+    gap:20px;
+    width:60%;
+    align-items:center;
+}
+
+.left-nav p{
+    font-size:30px;
+    font-weight:bold;
+    color:red;
+}
+
+.left-nav span{
+    color:black;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border:2px solid #7a7a7a;
+    border-radius:8px;
+    padding:10px;
+    flex: 1;
+}
+
+.search-box input{
+    flex: 1;
+    border:none;
+    outline:none;
+}
+.search-box input::placeholder{
+color:  red;
+}
+
+
+.right-nav ul{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+}
+
+.right-nav button{
+    background-color:crimson;
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:5px 15px;
+    cursor:pointer;
+}
+
+.sub-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 80px;
+    background-color:#f5f5f5;
+}
+
+.sub-left,
+.sub-right{
+    display:flex;
+    gap:20px;
+}
+
+.sub-navbar a{
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
+    font-weight:500;
+}
+
+.sub-navbar a:hover{
+    color:red;
+}
+hr{
+    color:gray;
+    opacity: 0.3;
+}
+            /* Hero Section*/
+.poster{
+    display: flex;
+    justify-content: center;
+}
+.poster img{
+    width: 90%;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+.card{
+    position: relative;
+}
+.movie-cards{
+    margin: 40px 40px 10px 40px ;
+}
+.movie-cards .reco{
+    padding-left: 50px;
+}
+.movie-cards .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-cards .info p{
+    color: red;
+    font-size: 15px;
+    padding-right: 40px;
+}
+.card img{
+    width: 250px;
+    border-radius:20px;
+}
+.text{
+    width: 250px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 45px;
+}
+.fa-thumbs-up{
+    color:#24A83F;
+}
+.fa-star{
+    color:red;
+}
+.card .text {
+    background-color:black;
+    color:white;
+    border-radius:  0px 0px 20px 20px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+   
+}
+.card-container .card img {
+    width:250px;
+    height: 350px;
+}
+.card-info {
+    text-align: center;
+}
+
+.image img{
+  margin: 80px;
+  width: 90%;
+}
+
+.events h2{
+  margin-left: 90px;
+  margin-bottom: 10px;
+}
+
+.event-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.event-card img{
+  width: 200px;
+  border-radius: 8px;
+}
+
+.artist h2{
+  margin-left: 100px;
+}
+
+.artist-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.artist-card img{
+  border-radius: 50%;
+  width: 200px;
+}
+
+footer{
+    margin-top: 10px;
+    width:100%;
+    background:#1e1e1e;
+    color:#f2f2f2;
+    padding:40px 20px;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.footer h2{
+    color:white;
+    cursor:pointer;
+}
+
+.footer p{
+    color:#b3b3b3;
+    cursor:pointer;
+}
+
+.footer p:hover{
+    color:white;
+}
+
+.line{
+    border:none;
+    height:1px;
+    background:#444;
+    margin:20px auto;
+    width:90%;
+   
+}
+
+.foot{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+
+.foot p{
+    max-width:900px;
+    color:#999;
+    line-height:1.6;
+    font-size:14px;
+}
