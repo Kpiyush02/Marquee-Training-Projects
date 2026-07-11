@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.main{
+    width: 90%;
+    margin: 20px auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.place{
+    width: 32%;
+    text-align: center;
+}
+
+.place img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.place h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.place p{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+.place:hover{
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+.visit{
+      width: 70%;
+      border: 2px solid black;
+      border-radius: 20px;
+      text-align: center;
+      margin: 20px auto;
+}
+.visit h1{
+    font-size: 36px;
+    color: #2c3e50;
+    position: relative;
+}
+.visit h1::after{
+    content: "";
+    width: 20%;
+    height: 4px;
+    background: orange;
+    display: block;
+    margin: 10px auto; 
+    border-radius: 5px;
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature{
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.feature h3{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.feature h2{
+    color: red;
+}
+
+.feature p{
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+   
+}
+
+.feature i{
+    font-size: 30px;
+}
+.fa-landmark{
+    color: brown;
+}
+.fa-place-of-worship{
+    color: #FF6B35;
+}
+.fa-tree{
+    color: green;
+}
+.fa-utensils{
+    color:#E63946;
+}
