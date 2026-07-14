@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f1f3f6;
+  /* background-color: #f1f3f6; */
 }
 
 /* ===== ROOT VARIABLES ===== */
@@ -63,7 +63,15 @@ header .location {
 header .location span {
   color: #126FED;
 }
+.offer{
+    text-align: center;
+}
 
+.offer img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
 /* ===== NAVBAR ===== */
 .navbar {
   display: flex;
